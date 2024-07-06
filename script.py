@@ -11,13 +11,13 @@ model = LpProblem(name="dieta", sense=LpMaximize)
 variables = {row['name']: LpVariable(name=row['name'], lowBound=0, cat='Continuous') for idx, row in df.iterrows()}
 
 # Función objetivo (no es necesario maximizar nada en este caso, pero se puede usar una constante)
-model += lpSum([0 * variables[row['nombre']] for idx, row in df.iterrows()])
+model += lpSum([0 * variables[row['name']] for idx, row in df.iterrows()])
 
 # Restricciones
-calories = lpSum([row['calorias'] * variables[row['nombre']] for idx, row in df.iterrows()])
-proteins = lpSum([row['proteinas'] * variables[row['nombre']] for idx, row in df.iterrows()])
-fats = lpSum([row['grasas'] * variables[row['nombre']] for idx, row in df.iterrows()])
-carbs = lpSum([row['carbohidratos'] * variables[row['nombre']] for idx, row in df.iterrows()])
+calories = lpSum([row['kcal'] * variables[row['name']] for idx, row in df.iterrows()])
+proteins = lpSum([row['protein'] * variables[row['name']] for idx, row in df.iterrows()])
+fats = lpSum([row['fat'] * variables[row['name']] for idx, row in df.iterrows()])
+carbs = lpSum([row['ch'] * variables[row['name']] for idx, row in df.iterrows()])
 
 model += (calories <= 2000, "Max Calories")
 model += (proteins >= 185, "Min Proteins")
