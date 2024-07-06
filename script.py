@@ -8,7 +8,7 @@ df = pd.read_csv('food.csv')
 model = LpProblem(name="dieta", sense=LpMaximize)
 
 # Crear variables
-variables = {row['name']: LpVariable(name=row['name'], lowBound=0, cat='Continuous') for idx, row in df.iterrows()}
+variables = {row['name']: LpVariable(name=row['name'], lowBound=0, upBound=row['max'], cat='Continuous') for idx, row in df.iterrows()}
 
 # Función objetivo (no es necesario maximizar nada en este caso, pero se puede usar una constante)
 model += lpSum([0 * variables[row['name']] for idx, row in df.iterrows()])
