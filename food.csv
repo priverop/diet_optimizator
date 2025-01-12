@@ -1,12 +1,12 @@
-name,kcal,protein,fat,ch,max
-Alesto Mix Edamame & Soja Tostado Sal,430,46,20,9,1
-Monissa Salteado de Verduras,34,1.80,0.20,5.10,3
-Aceite de Oliva,884,0,100,0,0.3
-Hacendado Cacahuete en Polvo Desgrasado,415,46.70,13.20,21,0.5
-NaturGreen Semillas de Calabaza,593,30,48.20,5.50,0.5
-Luengo Lentejas Cocidas,87,8.70,1.70,13,4
-Freshona Habas Finas,73,6.10,9.10,0,2
-Campo Largo Garbanzos Cocidos,99,5.60,1.70,13.20,4
-Freshona Judías Verdes,16,0.70,0.50,2.60,5
-HSN Essentials Pea Protein Isolate 2.0,423,85,1.50,8,1.3
-Plátano,89,1.08,0.33,22.84,1
+name,kcal,protein,fat,ch,max,unit
+Alesto Mix Edamame & Soja Tostado Sal,430,46,20,9,1,portion
+Monissa Salteado de Verduras,34,1.80,0.20,5.10,3,100g
+Aceite de Oliva,884,0,100,0,0.3,100g
+Hacendado Cacahuete en Polvo Desgrasado,415,46.70,13.20,21,0.5,100g
+NaturGreen Semillas de Calabaza,593,30,48.20,5.50,0.5,100g
+Luengo Lentejas Cocidas,87,8.70,1.70,13,4,100g
+Freshona Habas Finas,73,6.10,9.10,0,2,100g
+Campo Largo Garbanzos Cocidos,99,5.60,1.70,13.20,4,100g
+Freshona Judías Verdes,16,0.70,0.50,2.60,5,100g
+HSN Essentials Pea Protein Isolate 2.0,423,85,1.50,8,1.3,100g
+Plátano,89,1.08,0.33,22.84,3,portion
