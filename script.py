@@ -7,15 +7,15 @@ diet_goal = None
 # Set the default total macro restrictions
 min_cals = 0
 max_cals = 2000
-min_prot = 185
-max_prot = 9999
-min_fats = 60
+min_prot = 140
+max_prot = 175
+min_fats = 50
 max_fats = 9999
 min_carbs = 0
 max_carbs = 9999
 
 # Define the new maximum and minimum macro values
-set_custom_macros = input("The default macro values are: kcal[0,2000], prot[185,Inf], fat[60,Inf], carbs[0,Inf].\nDo you want to set your own macro values? (Y/N): ").strip().lower() == 'y'
+set_custom_macros = input("The default macro values are: kcal[0,2000], prot[140,175], fat[50,Inf], carbs[0,Inf].\nDo you want to set your own macro values? (Y/N): ").strip().lower() == 'y'
 if set_custom_macros:
     min_cals = float(input("Enter the minimum calories value: ").strip())
     max_cals = float(input("Enter the maximum calories value: ").strip())
@@ -126,3 +126,4 @@ elif LpStatus[status] == 'Optimal':
 else:
     print("No se encontró una solución óptima.")
 print("\n")
+print("test")
